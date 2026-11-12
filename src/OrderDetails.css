@@ -1,0 +1,212 @@
+
+/* ==============================
+   ORDER DETAILS PAGE
+============================== */
+
+.order-details {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  color: #333;
+  box-sizing: border-box;
+}
+
+.order-details h1 {
+  font-size: 30px;
+  color: #174f35;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #e8eee9;
+  padding-bottom: 15px;
+}
+
+.order-details h3 {
+  font-size: 21px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.order-details p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 12px 0;
+  color: #555;
+  overflow-wrap: anywhere;
+}
+
+.order-details p strong {
+  color: #222;
+  display: inline-block;
+  min-width: 145px;
+}
+
+/* ORDER STATUS */
+
+.order-details .order-status {
+  display: inline-block;
+  padding: 6px 15px;
+  background: #fff3cd;
+  color: #856404;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* SECTION HEADING */
+
+.order-details h2 {
+  font-size: 21px;
+  color: #174f35;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+/* PRODUCT TABLE */
+
+.order-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: #fff;
+}
+
+.order-details thead {
+  background: #174f35;
+  color: white;
+}
+
+.order-details th,
+.order-details td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #e5e5e5;
+  font-size: 14px;
+}
+
+.order-details th {
+  font-weight: 600;
+}
+
+.order-details tbody tr:nth-child(even) {
+  background: #f7faf8;
+}
+
+.order-details tbody tr:hover {
+  background: #eef6f0;
+}
+
+/* TOTAL AMOUNT */
+
+.order-details h2:last-of-type {
+  text-align: right;
+  background: #f0f7f2;
+  padding: 20px;
+  border-radius: 8px;
+  color: #174f35;
+  font-size: 23px;
+}
+
+/* BACK BUTTON */
+
+.order-details a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: #174f35;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.order-details a:hover {
+  background: #236b47;
+  transform: translateY(-2px);
+}
+
+/* LOADING / ERROR */
+
+.order-details p {
+  overflow-wrap: anywhere;
+}
+
+/* ==============================
+   TABLET RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+  .order-details {
+    margin: 25px 15px;
+    padding: 22px;
+  }
+
+  .order-details h1 {
+    font-size: 25px;
+  }
+
+  .order-details h2 {
+    font-size: 19px;
+  }
+
+  .order-details table {
+    min-width: 600px;
+  }
+
+  .order-details {
+    overflow-x: auto;
+  }
+}
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 480px) {
+  .order-details {
+    margin: 15px 10px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .order-details h1 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .order-details h3 {
+    font-size: 18px;
+  }
+
+  .order-details p {
+    font-size: 13px;
+  }
+
+  .order-details p strong {
+    min-width: 115px;
+  }
+
+  .order-details h2 {
+    font-size: 18px;
+  }
+
+  .order-details th,
+  .order-details td {
+    padding: 11px;
+    font-size: 12px;
+  }
+
+  .order-details h2:last-of-type {
+    font-size: 19px;
+    padding: 15px;
+  }
+
+  .order-details a {
+    padding: 11px 17px;
+    font-size: 13px;
+  }
+}

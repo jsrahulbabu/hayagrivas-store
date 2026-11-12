@@ -1,0 +1,233 @@
+
+/* MY ACCOUNT PAGE */
+
+.my-account {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 35px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  color: #333;
+  box-sizing: border-box;
+}
+
+.my-account h1 {
+  text-align: center;
+  color: #174d32;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* PROFILE DETAILS */
+
+.my-account > div > p {
+  padding: 13px 15px;
+  margin: 10px 0;
+  background: #f8faf8;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.my-account strong {
+  color: #174d32;
+}
+
+/* COMMON BUTTONS */
+
+.my-account button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #21834a;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.my-account button:hover {
+  background: #145d32;
+}
+
+.my-account button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+/* EDIT PROFILE */
+
+.edit-profile-form {
+  margin-top: 25px;
+  padding: 25px;
+  background: #f8faf8;
+  border-radius: 10px;
+}
+
+.my-account h2 {
+  color: #174d32;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.edit-profile-form label,
+.change-password-section label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 15px 0 8px;
+  color: #444;
+}
+
+.edit-profile-form input,
+.change-password-section input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.edit-profile-form input:focus,
+.change-password-section input:focus {
+  border-color: #21834a;
+  box-shadow: 0 0 0 3px rgba(33, 131, 74, 0.1);
+}
+
+.edit-profile-form button {
+  margin: 20px 10px 0 0;
+}
+
+.edit-profile-form button[type="button"] {
+  background: #777;
+}
+
+.edit-profile-form button[type="button"]:hover {
+  background: #555;
+}
+
+/* PROFILE MESSAGE */
+
+.profile-message {
+  padding: 12px 15px;
+  background: #eaf7ed;
+  color: #21834a;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CHANGE PASSWORD */
+
+.change-password-section {
+  margin-top: 35px;
+  padding: 25px;
+  background: #f8faf8;
+  border-radius: 10px;
+}
+
+.change-password-section h2 {
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 13px;
+}
+
+.change-password-section form {
+  margin-top: 20px;
+}
+
+.change-password-section form button {
+  margin: 20px 10px 0 0;
+}
+
+.change-password-section form button[type="button"] {
+  background: #777;
+}
+
+.change-password-section form button[type="button"]:hover {
+  background: #555;
+}
+
+.change-password-section > p {
+  padding: 10px;
+  background: #eaf7ed;
+  color: #21834a;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* ACCOUNT ACTIONS */
+
+.account-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #eee;
+}
+
+.account-actions a {
+  display: inline-block;
+  padding: 11px 18px;
+  background: #f0f8f2;
+  color: #21834a;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.account-actions a:hover {
+  background: #21834a;
+  color: white;
+}
+
+.account-actions button {
+  background: #dc3545;
+}
+
+.account-actions button:hover {
+  background: #b02a37;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+  .my-account {
+    margin: 20px 12px;
+    padding: 20px 15px;
+  }
+
+  .my-account h1 {
+    font-size: 25px;
+  }
+
+  .edit-profile-form,
+  .change-password-section {
+    padding: 17px;
+  }
+
+  .account-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .account-actions a,
+  .account-actions button {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .edit-profile-form button,
+  .change-password-section form button {
+    margin: 12px 5px 0 0;
+  }
+}

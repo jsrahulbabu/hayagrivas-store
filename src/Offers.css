@@ -1,0 +1,150 @@
+.offers-page {
+  min-height: 70vh;
+  background: #f8faf6;
+  padding: 50px 6%;
+}
+
+.offers-banner {
+  background: linear-gradient(135deg, #176b38, #258c4e);
+  color: white;
+  text-align: center;
+  padding: 65px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+.offers-banner h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.offers-banner h2 {
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+.offers-banner p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.offers-content {
+  max-width: 850px;
+  margin: 45px auto;
+  text-align: center;
+}
+
+.offers-content h2 {
+  color: #176b38;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.offers-content p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.offers-contact {
+  max-width: 850px;
+  margin: 35px auto 0;
+  padding: 28px;
+  background: white;
+  border-radius: 12px;
+  border-left: 5px solid #258c4e;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.offers-contact h2 {
+  color: #176b38;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.offers-contact p {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+  .offers-page {
+    padding: 25px 15px;
+  }
+
+  .offers-banner {
+    padding: 45px 15px;
+  }
+
+  .offers-banner h1 {
+    font-size: 27px;
+  }
+
+  .offers-banner h2 {
+    font-size: 21px;
+  }
+
+  .offers-banner p {
+    font-size: 14px;
+  }
+
+  .offers-content h2 {
+    font-size: 22px;
+  }
+
+  .offers-contact {
+    padding: 20px;
+  }
+}
+
+.package-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.package-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border-top: 4px solid #258c4e;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.package-card h3 {
+  color: #176b38;
+  margin-bottom: 12px;
+}
+
+.package-card p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.order-policy {
+  background: #eef6ed;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.order-policy h3 {
+  color: #176b38;
+  margin-bottom: 15px;
+}
+
+.order-policy p {
+  color: #444;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .package-info {
+    grid-template-columns: 1fr;
+  }
+}

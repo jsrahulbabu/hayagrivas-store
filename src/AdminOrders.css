@@ -1,0 +1,225 @@
+
+/* ADMIN ORDERS PAGE */
+
+.admin-orders {
+  max-width: 1200px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 25px;
+  box-sizing: border-box;
+  color: #263238;
+}
+
+.admin-orders h1 {
+  font-size: 30px;
+  color: #1b4332;
+  margin-bottom: 20px;
+}
+
+.admin-orders h2 {
+  color: #1b4332;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.admin-orders h3 {
+  color: #2d6a4f;
+  font-size: 17px;
+  margin: 22px 0 12px;
+}
+
+.admin-orders > button {
+  background: #495057;
+  color: white;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ORDER CARD */
+
+.admin-order-card {
+  background: #ffffff;
+  padding: 25px;
+  margin: 20px 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 13px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.admin-order-card > p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.admin-order-card strong {
+  color: #343a40;
+}
+
+/* PRODUCT TABLE */
+
+.admin-order-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background: #fff;
+}
+
+.admin-order-card th {
+  background: #1b4332;
+  color: white;
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.admin-order-card td {
+  padding: 13px;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 14px;
+  color: #495057;
+}
+
+.admin-order-card tr:hover td {
+  background: #f5faf7;
+}
+
+/* TOTAL AMOUNT */
+
+.admin-order-card h3:nth-of-type(3) {
+  background: #e9f5ee;
+  padding: 14px;
+  border-radius: 8px;
+  color: #1b4332;
+}
+
+/* STATUS */
+
+.admin-order-card label {
+  display: block;
+  font-weight: 600;
+  margin: 15px 0 8px;
+  color: #343a40;
+}
+
+.admin-order-card select {
+  width: 220px;
+  max-width: 100%;
+  padding: 11px;
+  border: 1px solid #ced4da;
+  border-radius: 7px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.admin-order-card select:focus {
+  border-color: #40916c;
+  box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.12);
+}
+
+/* UPDATE BUTTON */
+
+.admin-order-card button {
+  background: #2d6a4f;
+  color: white;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-order-card button:hover {
+  background: #1b4332;
+}
+
+.admin-order-card button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.admin-order-card hr {
+  border: none;
+  border-top: 1px solid #e9ecef;
+  margin-top: 25px;
+}
+
+/* MESSAGE */
+
+.admin-orders > p {
+  padding: 12px;
+  background: #e9f5ee;
+  color: #1b4332;
+  border-radius: 7px;
+  overflow-wrap: anywhere;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .admin-orders {
+    padding: 20px;
+  }
+
+  .admin-order-card {
+    padding: 20px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .admin-orders {
+    margin: 15px auto;
+    padding: 12px;
+  }
+
+  .admin-orders h1 {
+    font-size: 24px;
+  }
+
+  .admin-orders h2 {
+    font-size: 20px;
+  }
+
+  .admin-orders h3 {
+    font-size: 16px;
+  }
+
+  .admin-order-card {
+    padding: 15px;
+    margin: 15px 0;
+  }
+
+  /* Responsive table scrolling */
+  .admin-order-card table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .admin-order-card th,
+  .admin-order-card td {
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  .admin-order-card select {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .admin-order-card button {
+    width: 100%;
+  }
+}

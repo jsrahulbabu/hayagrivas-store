@@ -1,0 +1,236 @@
+
+/* =====================================
+   HAYAGRIVAS STORE - LOGIN PAGE
+===================================== */
+
+.login-container {
+  min-height: 75vh;
+  width: 100%;
+  padding: 50px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f8f2, #e5f1e8);
+  box-sizing: border-box;
+}
+
+/* LOGIN CARD */
+
+.login-form {
+  width: 100%;
+  max-width: 430px;
+  padding: 38px 35px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(23, 79, 53, 0.12);
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+.login-form:hover {
+  box-shadow: 0 12px 35px rgba(23, 79, 53, 0.17);
+}
+
+/* HEADING */
+
+.login-form h2 {
+  text-align: center;
+  font-size: 27px;
+  color: #174f35;
+  margin: 0 0 30px;
+  font-weight: 700;
+}
+
+/* LABELS */
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* INPUT FIELDS */
+
+.login-form > input {
+  width: 100%;
+  height: 49px;
+  padding: 0 15px;
+  margin-bottom: 22px;
+  border: 1px solid #d6e2d9;
+  border-radius: 8px;
+  background: #fafffb;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #21834e;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(33, 131, 78, 0.10);
+}
+
+.login-form input::placeholder {
+  color: #929b94;
+}
+
+/* PASSWORD WRAPPER */
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.password-wrapper input {
+  width: 100%;
+  height: 49px;
+  padding: 0 75px 0 15px;
+  border: 1px solid #d6e2d9;
+  border-radius: 8px;
+  background: #fafffb;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+/* SHOW / HIDE BUTTON */
+
+.password-wrapper .password-toggle {
+  position: absolute;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: #21834e;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.password-wrapper .password-toggle:hover {
+  color: #174f35;
+}
+
+/* FORGOT PASSWORD */
+
+.forgot-password {
+  text-align: right;
+  margin: 12px 0 25px;
+  font-size: 13px;
+  color: #21834e;
+  cursor: pointer;
+}
+
+.forgot-password span:hover {
+  color: #174f35;
+  text-decoration: underline;
+}
+
+/* LOGIN BUTTON */
+
+.login-form .login-button {
+  width: 100%;
+  height: 49px;
+  background: #174f35;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-form .login-button:hover {
+  background: #236b47;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(23, 79, 53, 0.20);
+}
+
+.login-form .login-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* LOGIN MESSAGE */
+
+.login-form .login-message {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 18px;
+  padding: 10px;
+  border-radius: 7px;
+  background: #e8f5eb;
+  color: #174f35;
+  overflow-wrap: anywhere;
+}
+
+/* REGISTER LINK */
+
+.login-form .register-link {
+  text-align: center;
+  margin: 25px 0 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.login-form .register-link a {
+  color: #21834e;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-form .register-link a:hover {
+  color: #174f35;
+  text-decoration: underline;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 40px 20px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+  .login-container {
+    min-height: 70vh;
+    padding: 30px 15px;
+  }
+
+  .login-form {
+    padding: 28px 22px;
+    border-radius: 12px;
+  }
+
+  .login-form h2 {
+    font-size: 23px;
+    margin-bottom: 25px;
+  }
+
+  .login-form > input,
+  .password-wrapper input {
+    height: 46px;
+    font-size: 13px;
+  }
+
+  .login-form .login-button {
+    height: 46px;
+    font-size: 15px;
+  }
+
+  .login-form .register-link {
+    font-size: 13px;
+  }
+}

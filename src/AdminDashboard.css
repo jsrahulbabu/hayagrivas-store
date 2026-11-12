@@ -1,0 +1,87 @@
+
+.admin-dashboard {
+  min-height: 75vh;
+  padding: 45px 6%;
+  background: #f5f8f5;
+  box-sizing: border-box;
+}
+
+.admin-dashboard h1 {
+  color: #176b38;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.admin-dashboard h3 {
+  color: #222;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard > p {
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.admin-menu {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 850px;
+}
+
+.admin-menu button {
+  min-height: 110px;
+  padding: 25px;
+  background: white;
+  color: #176b38;
+  border: 1px solid #e2ebe3;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  transition: 0.25s ease;
+}
+
+.admin-menu button:hover {
+  background: #176b38;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(23,107,56,0.15);
+}
+
+.admin-menu button:last-child {
+  color: #dc2626;
+}
+
+.admin-menu button:last-child:hover {
+  background: #dc2626;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .admin-dashboard {
+    padding: 30px 16px;
+  }
+
+  .admin-dashboard h1 {
+    font-size: 26px;
+  }
+
+  .admin-dashboard h3 {
+    font-size: 20px;
+  }
+
+  .admin-menu {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .admin-menu button {
+    min-height: 85px;
+    padding: 20px;
+    font-size: 15px;
+  }
+}
